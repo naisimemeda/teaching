@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+  <title>Pusher Test</title>
+</head>
+<body>
+<h1>Pusher Test</h1>
+<p>
+  Publish an event to channel <code>my-channel</code>
+  with event name <code>my-event</code>; it will appear below:
+</p>
+<div id="app">
+  <ul>
+    <li v-for="message in messages">
+      {{message}}
+    </li>
+  </ul>
+</div>
+
+<script src="https://js.pusher.com/6.0/pusher.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+  // Enable pusher logging - don't include this in production
+  Pusher.logToConsole = true;
+
+
+
+  var pusher = new Pusher('202bc42dca137d276f5a', {
+    cluster: 'eu',
+    authEndpoint: 'http://localhost/api/valid/notification',
+    auth: {
+      headers: {
+        'Authorization': "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImY0ZTA5NTYwNzkzMjU5N2E2OGRmYzk5MGIwOWRhYTExMmQzOGE3MWY2YWQ1NzEzOTRmMmYwNWQ0NjkxODcyNGE1ZDBkMjExYzEwMmViOGUxIn0.eyJhdWQiOiIxIiwianRpIjoiZjRlMDk1NjA3OTMyNTk3YTY4ZGZjOTkwYjA5ZGFhMTEyZDM4YTcxZjZhZDU3MTM5NGYyZjA1ZDQ2OTE4NzI0YTVkMGQyMTFjMTAyZWI4ZTEiLCJpYXQiOjE1ODk2ODUwMDMsIm5iZiI6MTU4OTY4NTAwMywiZXhwIjoxNTkwOTgxMDAzLCJzdWIiOiIyMCIsInNjb3BlcyI6WyIqIl19.FSYz5H2wU-UvqI-0x7xC_qXm2wateXtliZLy8X2JxJ9fskMcX6x2ojhrP9NCicfqQZ_wdVFbC6PEW4e5VK5EGnM6dVrg3cu8EC9YVQElUWsNN-C_yhOqVWQ8a1N82MV1_3bTgt7zjbE6kaR96R29lGMcajJ79AH4AEdK54jgm1crX8It4HHdRguwJ2FyPxJPRTlPnABAtmsyc3Y88wkg5HcQ2E7Sbb3N3VzSTc9HZfRJH7F1WPqqfbzjH_vMnUC7dk7TSIdi0mFWXjX-Ahtx7oMe40kDhG9CQ1LW9FmceI74AeM6RqDvHoHdT_edBA3fwaYexW5NuZgdQ3UDyEoQDSQ0lxotdVc83KqQ54skUOwb6NxtKyp_l21vkhj4RqJl4cGJ3-WVyIR5D8DJWFkZHdtAuSURtuMYyHxhmpU5cmN3aXxHbgiRvukFxPSDDmLU1hoHaCB7X2rq_YhVpLtyx1A5g1DIimCzd0LeemuUkPa4L5NIR-mB-fpIXSFItoH6I6NBCd40LRGXfX-8XyoEVQlBK5mpCmlaUqD0fTh3ghpZlqI3S9ldiJ3PBIkN9O1DFWSyr92xeyTKOgqfRT22K26LKcUrlKimfeEm1nOBazqcms04o5OtklKGufRhds5x2tD7CC2-YA8LMgCCmYd62CxagmE3p-fZ7eA61r-YtDw"
+      }
+    }
+  });
+
+  console.log(pusher)
+  console.log(pusher)
+  console.log(pusher)
+  console.log(pusher)
+  console.log(pusher)
+
+  var channel = pusher.subscribe('private-teacher.20');
+  channel.bind('chat', function(data) {
+    app.messages.push(JSON.stringify(data));
+  });
+
+
+
+  // Vue application
+  const app = new Vue({
+    el: '#app',
+    data: {
+      messages: [],
+    },
+  });
+</script>
+</body>
