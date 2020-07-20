@@ -14,7 +14,7 @@
     "laravel-echo": "^1.8.0",
     "less": "^3.11.1",
     "less-loader": "^6.1.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "pusher-js": "^6.0.3",
     "view-design": "^4.2.0",
     "vue": "^2.6.11",
