@@ -5182,9 +5182,9 @@ minimatch@^3.0.4:
     brace-expansion "^1.1.7"
 
 minimist@^1.2.0, minimist@^1.2.5:
-  version "1.2.5"
-  resolved "https://registry.npm.taobao.org/minimist/download/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
-  integrity sha1-Z9ZgFLZqaoqqDAg8X9WN9OTpdgI=
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.6.tgz#8637a5b759ea0d6e98702cfb3a9283323c93af44"
+  integrity sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==
 
 minipass-collect@^1.0.2:
   version "1.0.2"
@@ -6432,9 +6432,9 @@ punycode@^2.1.0, punycode@^2.1.1:
   integrity sha1-tYsBCsQMIsVldhbI0sLALHv0eew=
 
 pusher-js@^6.0.3:
-  version "6.0.2"
-  resolved "https://registry.npm.taobao.org/pusher-js/download/pusher-js-6.0.2.tgz#5a43bcca9525a0b083492c21802244f37d9782d6"
-  integrity sha1-WkO8ypUloLCDSSwhgCJE832XgtY=
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/pusher-js/-/pusher-js-6.0.3.tgz#97e4dabe74bf39cb6978ea649fb9e13d8d7a8721"
+  integrity sha512-l0MHlrpG+D4R6jj+vjqnJNjawBqKCjQ4Y/YARNsWFbXGKNl77xX8pUpbv55Al+dFHGkc7wI2fDXw/BDLleF9Lg==
   dependencies:
     tweetnacl "^1.0.3"
 
