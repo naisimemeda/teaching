@@ -2739,9 +2739,9 @@ decamelize@^1.2.0:
   integrity sha1-9lNNFRSCabIDUue+4m9QH5oZEpA=
 
 decode-uri-component@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.npm.taobao.org/decode-uri-component/download/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
-  integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.2.tgz#e69dbe25d37941171dd540e024c444cd5188e1e9"
+  integrity sha512-FqUYQ+8o158GyGTrMFJms9qh3CqTKvAqgqsTnkLI8sKu0028orqBhxNMFkFen0zGyg6epACD32pjVk58ngIErQ==
 
 deep-equal@^1.0.1:
   version "1.1.1"
@@ -6432,9 +6432,9 @@ punycode@^2.1.0, punycode@^2.1.1:
   integrity sha1-tYsBCsQMIsVldhbI0sLALHv0eew=
 
 pusher-js@^6.0.3:
-  version "6.0.2"
-  resolved "https://registry.npm.taobao.org/pusher-js/download/pusher-js-6.0.2.tgz#5a43bcca9525a0b083492c21802244f37d9782d6"
-  integrity sha1-WkO8ypUloLCDSSwhgCJE832XgtY=
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/pusher-js/-/pusher-js-6.0.3.tgz#97e4dabe74bf39cb6978ea649fb9e13d8d7a8721"
+  integrity sha512-l0MHlrpG+D4R6jj+vjqnJNjawBqKCjQ4Y/YARNsWFbXGKNl77xX8pUpbv55Al+dFHGkc7wI2fDXw/BDLleF9Lg==
   dependencies:
     tweetnacl "^1.0.3"
 
